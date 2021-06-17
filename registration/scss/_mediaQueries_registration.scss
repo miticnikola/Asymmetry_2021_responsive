@@ -1,0 +1,239 @@
+// Media queries
+
+/* Extra large devices */
+@media only screen and (max-width: 1578px) {
+  body {
+    .left {
+      width: 40%;
+    }
+    #main {
+      width: 60%;
+    }
+  }
+}
+
+/*  max-width: 1050px */
+@media only screen and (max-width: 1050px) {
+  body {
+    .left {
+      width: 20%;
+    }
+    #main {
+      width: 80%;
+    }
+  }
+}
+
+/* max-width: 868px */
+@media only screen and (max-width: 868px) {
+  body {
+    background-image: url("../img/background-mob.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    .left {
+      width: 10%;
+      .decoration {
+        right: -5px;
+        .div_line1 {
+          height: 45vh;
+        }
+        .div_line2 {
+          height: 65vh;
+        }
+        .div_line3 {
+          display: none;
+        }
+      }
+    }
+    #main {
+      width: 90%;
+      section {
+        img {
+          width: 80%;
+        }
+        .content {
+          margin-bottom: 50px;
+          form {
+            .checkboxes {
+              width: 83.5%;
+            }
+          }
+        }
+      }
+      footer {
+        p {
+          margin: 0 auto;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+// max-width: 640px
+@media only screen and (max-width: 640px) {
+  body {
+    #main {
+      header {
+        .logo {
+          width: 80%;
+        }
+      }
+      h1 {
+        font-size: 1.1rem;
+        margin-top: 100px;
+      }
+
+      .underHeader {
+        font-size: 0.9rem;
+        width: 95%;
+        margin: 0 auto;
+      }
+
+      section {
+        .content {
+          margin-bottom: 100px;
+          form {
+            .checkboxes {
+              width: 84.5%;
+            }
+          }
+        }
+      }
+      footer {
+        width: 90%;
+        p {
+          padding: 0;
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+/* Max-width: 480px */
+@media only screen and (max-width: 480px) {
+  body {
+    .left {
+      .decoration {
+        .div_line1 {
+          height: 70vh;
+        }
+        .div_line2 {
+          height: 100vh;
+        }
+      }
+    }
+    #main {
+      header {
+        .logo {
+          width: 55%;
+        }
+      }
+
+      h1 {
+        margin-top: 50px;
+        font-size: 1.1rem;
+      }
+      .underHeader {
+        width: 85%;
+      }
+
+      section {
+        img {
+          width: 85%;
+        }
+        .content {
+          margin-bottom: 70px;
+          form {
+            .inputs {
+              input {
+                width: 85%;
+                margin: 4px;
+                text-align: center;
+              }
+            }
+            .checkboxes {
+              width: 85%;
+              .checkbox {
+                font-size: 0.8rem;
+                padding-bottom: 5px;
+              }
+            }
+          }
+        }
+      }
+      footer {
+        p:last-of-type {
+          font-size: 0.75rem;
+          width: 95%;
+        }
+      }
+    }
+  }
+}
+
+// max-width: 360px
+@media only screen and (max-width: 360px) {
+  body {
+    #main {
+      header {
+        .logo {
+          width: 45%;
+        }
+      }
+      h1 {
+        font-size: 0.9rem;
+      }
+      .underHeader {
+        font-size: 0.8rem;
+      }
+      section {
+        .content {
+          form {
+            .checkboxes {
+              width: 85%;
+              .checkbox {
+                font-size: 0.65rem;
+              }
+            }
+          }
+        }
+      }
+      footer {
+        p:last-of-type {
+          font-size: 0.62rem;
+        }
+      }
+    }
+  }
+}
+
+// Extra small devices
+// max-width: 280px
+@media only screen and (max-width: 280px) {
+  body {
+    #main {
+      footer {
+        p:last-of-type {
+          font-size: 0.55rem;
+        }
+      }
+    }
+  }
+}
+
+// max-width: 240px
+@media only screen and (max-width: 240px) {
+  body {
+    #main {
+      footer {
+        p:last-of-type {
+          font-size: 0.49rem;
+        }
+      }
+    }
+  }
+}

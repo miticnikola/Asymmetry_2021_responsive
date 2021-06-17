@@ -1,0 +1,85 @@
+// Import variables and mixins
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+* {
+  @include reset-css;
+}
+// Body
+body {
+  @include body;
+
+  // Left section with decoration
+  @import "../../scss/leftMaskDiv";
+
+  // #main section with content
+  #main {
+    @include main;
+
+    // Header
+    @import "../../scss/header";
+
+    h2 {
+      padding-bottom: 100px;
+    }
+
+    // Content section
+    section {
+      .content {
+        div {
+          margin: 7px 10px;
+        }
+        .card {
+          width: 170px;
+          height: 170px;
+          border: 5px solid $tirquose;
+          background-size: cover;
+          background-position: 30% 100%;
+          cursor: pointer;
+        }
+        .above {
+          display: flex;
+          flex-wrap: wrap-reverse;
+
+          .first_card {
+            background-image: url("../img/pic6.jpg");
+          }
+          .second_card {
+            background-image: url("../img/pic2.jpg");
+          }
+          .third_card {
+            background-image: url("../img/pic6.jpg");
+          }
+          .fourth_card {
+            background-image: url("../img/pic5.jpg");
+          }
+        }
+        .below {
+          display: flex;
+          flex-wrap: wrap;
+          .fifth_card {
+            background-image: url("../img/pic8.jpg");
+          }
+          .sixth_card {
+            background-image: url("../img/pic5.jpg");
+          }
+          .seventh_card {
+            background-image: url("../img/kartica\ memory.png");
+          }
+          .eighth_card {
+            background-image: url("../img/pic2.jpg");
+          }
+        }
+      }
+    }
+    // Footer
+    footer {
+      @include footer;
+      p {
+        padding: 20px 0px;
+      }
+    }
+  }
+}
+
+@import "mediaQueries_memory";

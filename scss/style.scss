@@ -1,0 +1,48 @@
+// Import variables and mixins
+@import "variables";
+@import "mixins";
+
+* {
+  @include reset-css;
+}
+
+// Body
+body {
+  @include body;
+  // Left section with decoration
+  @import "leftMaskDiv";
+
+  // #main section with content
+  #main {
+    @include main;
+    // Header
+    @import "header";
+
+    .introImg {
+      // width: 500px;
+      width: 50%;
+      @include shadowBorderImg;
+    }
+    p {
+      padding: 50px 0;
+    }
+    #start {
+      padding: 10px 60px;
+      color: white;
+      background-color: $tirquose;
+      border: none;
+      box-shadow: $box-shadow;
+      cursor: pointer;
+    }
+    // Footer
+    footer {
+      @include footer;
+      p {
+        padding: 20px 0px;
+      }
+    }
+  }
+}
+
+// Media queries - import
+@import "mediaQueries";

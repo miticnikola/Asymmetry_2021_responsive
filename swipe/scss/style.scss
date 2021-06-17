@@ -1,0 +1,79 @@
+// Import variables and mixins
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+* {
+  @include reset-css;
+}
+// Body
+body {
+  @include body;
+
+  // Left section with decoration
+  @import "../../scss/leftMaskDiv";
+
+  // #main section with content
+  #main {
+    @include main;
+
+    // Header
+    @import "../../scss/header";
+
+    h2 {
+      padding-bottom: 30px;
+    }
+    p {
+      padding-bottom: 50px;
+    }
+
+    // Content section
+    section {
+      img {
+        width: 67%;
+        @include shadowBorderImg;
+      }
+      .content {
+        display: flex;
+        margin-top: 35px;
+        .answer {
+          width: 60%;
+          padding: 10px 0;
+          margin: 5px 0;
+          border: none;
+          background-color: $tirquose;
+          color: $white;
+          box-shadow: $box-shadow;
+          cursor: pointer;
+          margin-top: 110px;
+        }
+        .swipe_left {
+          width: 50%;
+          position: relative;
+          height: 200px;
+          .arrow_left {
+            @include arrow;
+            right: 100px;
+          }
+        }
+        .swipe_right {
+          width: 50%;
+          position: relative;
+          .arrow_right {
+            @include arrow;
+            left: 100px;
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+    // Footer
+    footer {
+      @include footer;
+      p {
+        padding: 20px 0px;
+      }
+    }
+  }
+}
+
+@import "mediaQueries_swipe";

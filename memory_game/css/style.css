@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; }
+
+body {
+  background-image: url("../img/background-desktop.jpg");
+  background-size: cover;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  body .left {
+    position: relative;
+    width: 42.5%; }
+    body .left .decoration {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      position: absolute;
+      bottom: 0;
+      right: -30px;
+      z-index: 1; }
+      body .left .decoration .mask {
+        width: 20px;
+        height: 30px;
+        -webkit-clip-path: polygon(0% 100%, 100% 100%, 0% 0%);
+                clip-path: polygon(0% 100%, 100% 100%, 0% 0%);
+        background-color: #008e99;
+        position: absolute;
+        top: -29px; }
+      body .left .decoration .div_line1 {
+        background-color: rgba(0, 142, 153, 0.75);
+        height: 42vh;
+        width: 20px;
+        position: relative; }
+        body .left .decoration .div_line1 .mask {
+          -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
+                  clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
+          -webkit-transform: rotate(180deg);
+                  transform: rotate(180deg);
+          background-color: rgba(0, 142, 153, 0.8);
+          height: 20px;
+          top: -20px; }
+      body .left .decoration .div_line2 {
+        background-color: #008e99;
+        height: 72vh;
+        width: 20px;
+        position: relative; }
+      body .left .decoration .div_line3 {
+        background-color: rgba(0, 142, 153, 0.6);
+        height: 53vh;
+        width: 20px;
+        position: relative; }
+        body .left .decoration .div_line3 .mask {
+          background-color: rgba(0, 142, 153, 0.6);
+          top: -30px; }
+  body #main {
+    width: 57.5%;
+    background-color: rgba(242, 242, 242, 0.8);
+    min-height: 100vh;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    body #main header {
+      text-align: center;
+      position: absolute;
+      top: 0; }
+      body #main header .logo {
+        width: 77%;
+        margin-top: 15px; }
+    body #main h2 {
+      padding-bottom: 100px; }
+    body #main section .content div {
+      margin: 7px 10px; }
+    body #main section .content .card {
+      width: 170px;
+      height: 170px;
+      border: 5px solid #008e99;
+      background-size: cover;
+      background-position: 30% 100%;
+      cursor: pointer; }
+    body #main section .content .above {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap-reverse;
+          flex-wrap: wrap-reverse; }
+      body #main section .content .above .first_card {
+        background-image: url("../img/pic6.jpg"); }
+      body #main section .content .above .second_card {
+        background-image: url("../img/pic2.jpg"); }
+      body #main section .content .above .third_card {
+        background-image: url("../img/pic6.jpg"); }
+      body #main section .content .above .fourth_card {
+        background-image: url("../img/pic5.jpg"); }
+    body #main section .content .below {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      body #main section .content .below .fifth_card {
+        background-image: url("../img/pic8.jpg"); }
+      body #main section .content .below .sixth_card {
+        background-image: url("../img/pic5.jpg"); }
+      body #main section .content .below .seventh_card {
+        background-image: url("../img/kartica memory.png"); }
+      body #main section .content .below .eighth_card {
+        background-image: url("../img/pic2.jpg"); }
+    body #main footer {
+      width: 50%;
+      position: absolute;
+      bottom: 0; }
+      body #main footer p {
+        padding: 20px 0px; }
+
+/* Extra large devices */
+@media only screen and (max-width: 1578px) {
+  body .left {
+    width: 40%; }
+  body #main {
+    width: 60%; }
+    body #main section .content .card {
+      width: 150px;
+      height: 150px; } }
+@media only screen and (max-width: 1275px) {
+  body #main section .content .card {
+    width: 120px;
+    height: 120px; } }
+/*  max-width: 1050px */
+@media only screen and (max-width: 1050px) {
+  body .left {
+    width: 20%; }
+  body #main {
+    width: 80%; }
+    body #main section .content .card {
+      width: 150px;
+      height: 150px; } }
+/* max-width: 868px */
+@media only screen and (max-width: 868px) {
+  body {
+    background-image: url("../img/background-mob.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%; }
+    body .left {
+      width: 10%; }
+      body .left .decoration {
+        right: -5px; }
+        body .left .decoration .div_line1 {
+          height: 45vh; }
+        body .left .decoration .div_line2 {
+          height: 65vh; }
+        body .left .decoration .div_line3 {
+          display: none; }
+    body #main {
+      width: 90%; }
+      body #main h2 {
+        padding-bottom: 20px; }
+      body #main section .content {
+        margin: 0 auto;
+        width: 80%;
+        margin-bottom: 50px; }
+        body #main section .content div {
+          margin: 0; }
+        body #main section .content .card {
+          width: 180px;
+          height: 180px;
+          margin: 10px; }
+        body #main section .content .above {
+          width: 100%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -ms-flex-wrap: wrap-reverse;
+              flex-wrap: wrap-reverse; }
+        body #main section .content .below {
+          width: 100%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+      body #main footer p {
+        margin: 0 auto;
+        font-size: 0.9rem; } }
+@media only screen and (max-width: 640px) {
+  body #main header .logo {
+    width: 80%; }
+  body #main h2 {
+    font-size: 1.1rem;
+    margin-top: 50px;
+    padding-top: 50px; }
+  body #main section .content {
+    width: 90%;
+    margin-bottom: 50px; }
+    body #main section .content .card {
+      width: 170px;
+      height: 170px;
+      margin: 7px; }
+  body #main footer {
+    width: 90%; }
+    body #main footer p {
+      padding: 0;
+      padding-bottom: 5px; } }
+/* 480px */
+@media only screen and (max-width: 480px) {
+  body #main header .logo {
+    width: 55%; }
+  body #main h2 {
+    font-size: 0.9rem;
+    padding-top: 0px; }
+  body #main section .content {
+    width: 100%; }
+    body #main section .content .card {
+      height: 135px;
+      width: 135px; }
+  body #main footer p {
+    font-size: 0.75rem;
+    width: 95%; } }
+@media only screen and (max-width: 360px) {
+  body #main header .logo {
+    width: 45%; }
+  body #main h2 {
+    font-size: 0.9rem; }
+  body #main footer p:last-of-type {
+    font-size: 0.62rem; } }
+@media only screen and (max-width: 349px) {
+  * {
+    font-size: 0.7rem; }
+
+  body #main header .logo {
+    width: 45%; }
+  body #main section .content {
+    width: 100%; }
+    body #main section .content .card {
+      width: 110px;
+      height: 110px; }
+  body #main footer p:last-of-type {
+    font-size: 0.84rem; } }
+@media only screen and (max-width: 300px) {
+  * {
+    font-size: 0.7rem; }
+
+  body #main section .content {
+    width: 100%; }
+    body #main section .content .card {
+      width: 95px;
+      height: 95px;
+      margin: 3px; } }
+@media only screen and (max-width: 280px) {
+  body #main footer p:last-of-type {
+    font-size: 0.84rem; } }
+@media only screen and (max-width: 240px) {
+  body #main footer p:last-of-type {
+    font-size: 0.49rem; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google font link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!-- BODY -->
+
+<body>
+    <!-- Left section -->
+    <section class="left">
+        <!-- Section decoration -->
+        <div class="decoration">
+            <div class="div_line1">
+                <div class="mask"></div>
+            </div>
+            <div class="div_line2">
+                <div class="mask"></div>
+            </div>
+            <div class="div_line3">
+                <div class="mask"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Right section -->
+    <section id="main">
+        <!-- HEADER -->
+        <header><img src="img/logo.png" class="logo" alt="logo.png"></header>
+
+        <h1>AWESOME JOB!</h1>
+        <p class="underHeader">Entice your players to register so they can get a prize!</p>
+
+        <!-- CONTENT SECTION -->
+        <section>
+            <img src="img/pic1.jpg" alt="image">
+            <!-- CONTENT -->
+            <div class="content">
+                <form action="">
+                    <div class="inputs">
+                        <input type="text" name="name" id="name" placeholder="First name">
+                        <input type="text" name="lastName" id="lastName" placeholder="Last name">
+                        <input type="email" name="email" id="email" placeholder="E-mail address">
+                        <input type="text" name="address" id="address" placeholder="Address">
+                        <input type="tel" name="phone" id="phone" placeholder="Phone">
+                        <input type="number" name="postalCode" id="postalCode" placeholder="Postal code">
+                    </div>
+
+                    <div class="checkboxes">
+                        <p class="checkbox">
+                            <input type="checkbox" name="termOfService" id="term" checked> I have read and accept
+                            <b>Terms of service.</b>
+                        </p>
+
+                        <p class="checkbox">
+                            <input type="checkbox" name="privacyPolicy" id="privacy" checked> I have read and accept
+                            <b>Privacy policy.</b>
+                        </p>
+
+                        <p class="checkbox">
+                            <input type="checkbox" name="recieveNewsByEmail" id="news"> I would like to recieve news by
+                            e-mail.
+                        </p>
+                    </div>
+
+                    <input type="submit" value="Submit" id="submit">
+
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2021, Asymmetry. <b>Privacy policy - Term of service</b></p>
+        </footer>
+    </section>
+    <!-- JS Link -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

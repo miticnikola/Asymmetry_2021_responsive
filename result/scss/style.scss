@@ -1,0 +1,71 @@
+// Import variables and mixins
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+* {
+  @include reset-css;
+}
+// Body
+body {
+  @include body;
+
+  // Left section with decoration
+  @import "../../scss/leftMaskDiv";
+
+  // #main section with content
+  #main {
+    @include main;
+
+    // Header
+    @import "../../scss/header";
+
+    h1 {
+      padding-bottom: 20px;
+    }
+    .underHeader {
+      padding-bottom: 50px;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    // Content section
+    section {
+      img {
+        width: 67%;
+        @include shadowBorderImg;
+      }
+      .content {
+        margin-top: 35px;
+        .socials {
+          ul {
+            li {
+              display: inline-block;
+              list-style-type: none;
+              background-color: $tirquose;
+              width: 35px;
+              height: 35px;
+              margin: 15px;
+              a {
+                display: block;
+                i {
+                  margin-top: 8px;
+                  color: $white;
+                  font-size: 1.2rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    // Footer
+    footer {
+      @include footer;
+      p {
+        padding: 20px 0px;
+      }
+    }
+  }
+}
+
+@import "mediaQueries_result";

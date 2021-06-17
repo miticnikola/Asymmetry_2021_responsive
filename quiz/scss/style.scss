@@ -1,0 +1,61 @@
+// Import variables and mixins
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+* {
+  @include reset-css;
+}
+// Body
+body {
+  @include body;
+
+  // Left section with decoration
+  @import "../../scss/leftMaskDiv";
+
+  // #main section with content
+  #main {
+    @include main;
+
+    // Header
+    @import "../../scss/header";
+
+    h2 {
+      padding-bottom: 30px;
+    }
+    p {
+      padding-bottom: 50px;
+    }
+
+    // Content section
+    section {
+      img {
+        width: 67%;
+        @include shadowBorderImg;
+      }
+      .content {
+        width: 53%;
+        margin: 0 auto;
+        margin-top: 35px;
+        .answer {
+          width: 100%;
+          padding: 10px 0;
+          margin: 5px 0;
+          border: none;
+          background-color: $tirquose;
+          color: $white;
+          box-shadow: $box-shadow;
+          cursor: pointer;
+        }
+      }
+    }
+    // Footer
+    footer {
+      @include footer;
+      p {
+        padding: 20px 0px;
+      }
+    }
+  }
+}
+
+@import "mediaQueries_quiz";

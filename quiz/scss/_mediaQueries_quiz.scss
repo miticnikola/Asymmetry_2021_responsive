@@ -1,0 +1,177 @@
+// Media queries
+
+/* Extra large devices */
+@media only screen and (max-width: 1578px) {
+  body {
+    .left {
+      width: 40%;
+    }
+    #main {
+      width: 60%;
+    }
+  }
+}
+/*  max-width: 1050px */
+@media only screen and (max-width: 1050px) {
+  body {
+    .left {
+      width: 20%;
+    }
+    #main {
+      width: 80%;
+      section {
+        .content {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+/* max-width: 868px */
+@media only screen and (max-width: 868px) {
+  body {
+    background-image: url("../img/background-mob.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    .left {
+      width: 10%;
+      .decoration {
+        right: -5px;
+        .div_line1 {
+          height: 45vh;
+        }
+        .div_line2 {
+          height: 65vh;
+        }
+        .div_line3 {
+          display: none;
+        }
+      }
+    }
+    #main {
+      width: 90%;
+      h2 {
+        padding-bottom: 20px;
+      }
+      section {
+        img {
+          width: 80%;
+        }
+        .content {
+          margin: 0 auto;
+          width: 80%;
+          margin-bottom: 50px;
+        }
+      }
+      footer {
+        p {
+          margin: 0 auto;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+// max-width: 640px
+@media only screen and (max-width: 640px) {
+  body {
+    #main {
+      header {
+        .logo {
+          width: 80%;
+        }
+      }
+      h2 {
+        font-size: 1.1rem;
+        margin-top: 50px;
+      }
+      section {
+        .content {
+          margin-bottom: 50px;
+        }
+      }
+      footer {
+        width: 90%;
+        p {
+          padding: 0;
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+/* 480px */
+@media only screen and (max-width: 480px) {
+  body {
+    #main {
+      header {
+        .logo {
+          width: 55%;
+        }
+      }
+      h2 {
+        font-size: 0.9rem;
+      }
+
+      footer {
+        p {
+          font-size: 0.75rem;
+          width: 95%;
+        }
+      }
+    }
+  }
+}
+
+// max-width: 360px
+@media only screen and (max-width: 360px) {
+  body {
+    #main {
+      header {
+        .logo {
+          width: 45%;
+        }
+      }
+      h2 {
+        font-size: 0.9rem;
+      }
+      footer {
+        p:last-of-type {
+          font-size: 0.62rem;
+        }
+      }
+    }
+  }
+}
+
+// max-width: 280px
+@media only screen and (max-width: 280px) {
+  body {
+    #main {
+      footer {
+        p:last-of-type {
+          font-size: 0.55rem;
+        }
+      }
+    }
+  }
+}
+
+// max-width: 240px
+@media only screen and (max-width: 240px) {
+  body {
+    #main {
+      footer {
+        p:last-of-type {
+          font-size: 0.49rem;
+        }
+      }
+    }
+  }
+}
+

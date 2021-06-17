@@ -1,0 +1,8 @@
+
+Font: Poppins (naslovi - bold) / (teskt - regular)
+
+Boje: Zelena - #008e99
+
+      Siva - #333333
+
+      Bela - #f2f2f2

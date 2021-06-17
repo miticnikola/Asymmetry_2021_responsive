@@ -1,0 +1,51 @@
+// Mixins
+@mixin body {
+    background-image: url("../img/background-desktop.jpg");
+    background-size: cover;
+    position: relative;
+    display: flex;
+}
+
+@mixin centered-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin main {
+    width: 57.5%;
+    background-color: rgba($color: $white, $alpha: 0.8);
+    min-height: 100vh;
+    text-align: center;
+    @include centered-flex;
+    flex-direction: column;
+}
+
+@mixin reset-css {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+@mixin shadowBorderImg {
+    border: 12px solid white;
+    box-shadow: $box-shadow;
+}
+
+@mixin arrow {
+    width: 0; 
+    height: 0; 
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent; 
+    border-right: 35px solid $tirquose; 
+    position: absolute;
+    cursor: pointer;
+}
+
+@mixin footer {
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+}
